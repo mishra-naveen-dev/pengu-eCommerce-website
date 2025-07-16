@@ -1,0 +1,11 @@
+.nav-link-custom {
+  color: #000 !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #111 !important;
+  text-decoration: none;
+}
+
+
