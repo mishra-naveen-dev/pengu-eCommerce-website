@@ -20,13 +20,17 @@ const Hero = () => {
         minHeight: "100vh",
         display: "flex",
         alignItems: "center",
-        padding: "80px 0",
+        marginRight: "0px",
+        marginLeft: "60px",
+        marginTop: "40px",
+        // padding: "40px 20px",
+        // position:"relative",
       }}
     >
       <div className="container">
         <div className="row align-items-center">
           {/* Left Content */}
-          <div className="col-lg-6">
+          <div className="col-lg-7">
             <div className="hero-content">
               <h1
                 style={{
@@ -190,23 +194,26 @@ const Hero = () => {
           </div>
 
           {/* Right Image */}
-          <div className="col-lg-6">
+          <div className="col-lg-5">
             <div
               style={{
                 display: "flex",
-                justifyContent: "center",
+                justifyContent: "right",
                 alignItems: "center",
+                marginTop: "0.5rem",
+                // position:"absolute",
               }}
             >
               <div
                 style={{
-                  width: "400px",
-                  height: "400px",
+                  width: "40rem",
+                  height: "40rem",
                   borderRadius: "50%",
-                  border: "5px solid #ff6b6b",
+                  border: "2px solid #ff6b6b",
                   display: "flex",
                   alignItems: "center",
-                  justifyContent: "center",
+                  justifyContent: "right",
+
                   backgroundColor: "#fff",
                 }}
               >
@@ -214,9 +221,11 @@ const Hero = () => {
                   src={slide.image}
                   alt={slide.title}
                   style={{
-                    width: "350px",
-                    height: "350px",
+                    // margin:"0px",
+                    width: "75rem",
+                    height: "75rem",
                     objectFit: "contain",
+                    paddingRight: "0px",
                   }}
                 />
               </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSlider from "./HeroSlider";
+import Hero from "./Hero";
 import NewArrivalProducts from "./NewArraival";
 import Banner from "./Banner";
 import PopularProducts from "./PopularProducts";
@@ -10,7 +10,7 @@ import LatestNews from "./LatestNews";
 const Home = () => {
   return (
     <>
-      <HeroSlider />
+      <Hero />
       <NewArrivalProducts />
       <Banner />
       <PopularProducts />
