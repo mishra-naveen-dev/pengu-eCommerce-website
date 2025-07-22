@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&amp;family=Mulish:wght@400;500;600;700&amp;display=swap");
+
 /* hero section */
 .color-dot {
   display: inline-block;
@@ -24,4 +26,39 @@
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
+}
+
+/* Hero Image Responsive Styles */
+.hero-image-container .image-circle {
+  transition: all 0.3s ease;
+}
+
+.hero-image-container .image-circle:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .hero-image-container .image-circle {
+    width: 400px !important;
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image-container .image-circle {
+    width: 350px !important;
+    height: 350px !important;
+  }
+
+  .hero-image-container {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-image-container .image-circle {
+    width: 300px !important;
+    height: 300px !important;
+  }
 }

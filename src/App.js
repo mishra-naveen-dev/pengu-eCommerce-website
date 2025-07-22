@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Cart from "./pages/Cart";
@@ -9,7 +9,7 @@ import Pages from "./pages/Pages";
 import Home from "./components/Home";
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/cart" element={<Cart />} />
@@ -20,7 +20,7 @@ function App() {
       </Routes>
       <Home />
       <Footer />
-    </Router>
+    </>
   );
 }
 

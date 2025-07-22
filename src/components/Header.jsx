@@ -3,7 +3,7 @@ import logo from "../assets/images/logo.svg";
 const Header = () => {
   return (
     <>
-      <header className="bg-white border-bottom py-2">
+      <header className="bg-white  py-2">
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light">
             <a className="navbar-brand" href="#">
@@ -69,7 +69,7 @@ const Header = () => {
             </div>
             <div className="btn btn-light rounded-circle">
               <i className="bi bi-search fs-5"></i>
-            </div>{" "}
+            </div>
             <div className="btn btn-light rounded-circle">
               <i className="bi bi-cart fs-5"></i>
             </div>

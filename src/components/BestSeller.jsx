@@ -1,34 +1,31 @@
 import React from "react";
-import img1 from "../assets/images/product-single/1.jpg";
-import img2 from "../assets/images/product-single/2.jpg";
-import img3 from "../assets/images/product-single/3.jpg";
-import img4 from "../assets/images/product-single/4.jpg";
+import img1 from "../assets/images/bestseller/img-1.jpg";
+import img2 from "../assets/images/bestseller/img-2.jpg";
+import img3 from "../assets/images/bestseller/img-3.jpg";
+import img4 from "../assets/images/bestseller/img-4.jpg";
 
-const NewArrivalProducts = () => {
-  const products = [
+const BestSeller = () => {
+  const bestsellerProducts = [
     {
       id: 1,
       image: img1,
       name: "Long Sleeve Tops",
-      oldPrice: "85.50",
+      oldPrice: "850.50",
       presentPrice: "70.30",
-      isActive: false,
     },
     {
       id: 2,
       image: img2,
       name: "White Wedding Shoe",
-      oldPrice: "150.20",
-      presentPrice: "120.50",
-      isActive: true,
+      oldPrice: "150.50",
+      presentPrice: "120.30",
     },
     {
       id: 3,
       image: img3,
       name: "Long Chain With Lockel",
       oldPrice: "85.50",
-      presentPrice: "70.30",
-      isActive: false,
+      presentPrice: "60.30",
     },
     {
       id: 4,
@@ -36,58 +33,34 @@ const NewArrivalProducts = () => {
       name: "Winter Jacket",
       oldPrice: "100.50",
       presentPrice: "80.30",
-      isActive: false,
     },
   ];
 
   return (
-    <section className="pengu-product-section section-padding">
+    <section className="pengu-bestseller-section section-padding">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-6 col-12">
             <div className="wpo-section-title">
-              <h2>New Arraival</h2>
-              <p>Here is our new arraival products that you may like.</p>
+              <h2>Best Seller</h2>
+              <p>Top sale in this week and this season.</p>
             </div>
           </div>
         </div>
-        <div className="product-wrap">
+        <div className="bestseller-wrap">
           <div className="row">
-            {products.map((product) => (
+            {bestsellerProducts.map((product) => (
               <div className="col-lg-3 col-md-6 col-12" key={product.id}>
-                <div
-                  className={`product-single-item ${
-                    product.isActive ? "" : ""
-                  }`}
-                >
+                <div className="product-single-item">
                   <div className="image">
-                    <img src={product.image} alt="" />
+                    <img src={product.image} alt={product.name} />
                     <div className="card-icon">
                       <a className="icon" href="wishlist.html">
                         <i className="bi bi-heart" aria-hidden="true"></i>
                       </a>
-                      {product.id === 2 ? (
-                        <a
-                          className="icon-active"
-                          href="wishlist.html"
-                          data-bs-toggle="tooltip"
-                          data-bs-html="true"
-                          title=""
-                          data-bs-original-title="Add To Wishlist"
-                        >
-                          <i
-                            className="bi bi-heart-fill"
-                            aria-hidden="true"
-                          ></i>
-                        </a>
-                      ) : (
-                        <a className="icon-active" href="wishlist.html">
-                          <i
-                            className="bi bi-heart-fill"
-                            aria-hidden="true"
-                          ></i>
-                        </a>
-                      )}
+                      <a className="icon-active" href="wishlist.html">
+                        <i className="bi bi-heart-fill" aria-hidden="true"></i>
+                      </a>
                     </div>
                     <ul className="cart-wrap">
                       <li>
@@ -159,4 +132,4 @@ const NewArrivalProducts = () => {
   );
 };
 
-export default NewArrivalProducts;
+export default BestSeller;
